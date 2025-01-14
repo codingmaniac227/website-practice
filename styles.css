@@ -1,0 +1,49 @@
+body {
+    background-color: slateblue;
+  
+}
+
+.header {
+    @font-face {
+        font-family: MATRIX;
+        src: url("Matrix-MZ4P.ttf") format("truetype");
+    }
+    display: flex;
+    background-image: url(/images/zeros-and-ones.jpg);
+    padding: 8px;
+    justify-content: space-between;
+    color: white;
+}
+
+.left-container, .right-container {
+    display: flex;
+    align-items: center;
+}
+
+.right-container > div > ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.right-container > div > ul > div {
+    border: 5px inset red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#donate {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    border: 3px solid black;
+    border-radius: 20%;
+}
+
+
+#broncode {
+    width: 200px;
+    mix-blend-mode: multiply;
+}
+
+
