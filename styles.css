@@ -1,18 +1,24 @@
+
+
+@font-face {
+    font-family: Matrix;
+    src: url("Lunar Escape.otf") format("opentype");
+}
+
+
 body {
-    background-color: slateblue;
-  
+    background-color: rgb(255, 219, 172);
+    margin: 0;
+ /* Added 'margin: 0;' to fill in space of header class */
 }
 
 .header {
-    @font-face {
-        font-family: MATRIX;
-        src: url("Matrix-MZ4P.ttf") format("truetype");
-    }
+    font-family: 'Matrix';
+    color: blue;
     display: flex;
-    background-image: url(/images/zeros-and-ones.jpg);
-    padding: 8px;
     justify-content: space-between;
-    color: white;
+    background-color: white;
+    padding: 10px 20px; 
 }
 
 .left-container, .right-container {
@@ -27,22 +33,25 @@ body {
 }
 
 .right-container > div > ul > div {
-    border: 5px inset red;
+    background-color: white;
+    border: 6px outset rgba(0, 0, 255, 0.788);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    font-size: 20px;
+    padding: 12px;
 }
 
 #donate {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
-    border: 3px solid black;
-    border-radius: 20%;
+    border: 8px double black;
+    border-radius: 40%;
+    background-color: rgb(255, 219, 172);
 }
 
 
 #broncode {
-    width: 200px;
+    width: 300px;
     mix-blend-mode: multiply;
 }
 
