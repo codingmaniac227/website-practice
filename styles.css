@@ -1,35 +1,58 @@
-<!DOCTYPE html>
 
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <meta http-equiv="X-UA-compatible" content="ie=edge">
-        <title>Website Practice</title>
-        <link rel="stylesheet", href="styles.css">
-    </head>
-    <body>
-        <div class="header">
-            
-            <!--LEFT CONTAINER-->
-            <div class="left-container">
-                <div>
-                    <img src="./images/broncodeimage.jpg" id="broncode">
-                </div>
-            </div>
-            
-            <!--RIGHT CONTAINER-->
-            <div class="right-container">
-                <div>
-                    <ul>
-                        <div><li>About</li></div>
-                        <div><li>History</li></div>
-                        <div><li>Login</li></div>
-                        <div id="donate"><li>Donate</li></div>
-                    </ul>
-                </div>
-            </div>
-        
-        </div>
-    </body>
-</html>
+
+@font-face {
+    font-family: Matrix;
+    src: url("Lunar Escape.otf") format("opentype");
+}
+
+
+body {
+    background-color: rgb(255, 219, 172);
+    margin: 0;
+ /* Added 'margin: 0;' to fill in space of header class */
+}
+
+.header {
+    font-family: 'Matrix';
+    color: blue;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px; 
+}
+
+.left-container, .right-container {
+    display: flex;
+    align-items: center;
+}
+
+.right-container > div > ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.right-container > div > ul > div {
+    background-color: white;
+    border: 6px outset rgba(0, 0, 255, 0.788);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 12px;
+}
+
+#donate {
+    font-weight: bolder;
+    border: 8px double black;
+    border-radius: 40%;
+    background-color: rgb(255, 219, 172);
+}
+
+
+#broncode {
+    width: 300px;
+    mix-blend-mode: multiply;
+}
+
+
